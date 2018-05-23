@@ -25,12 +25,12 @@
 
 		}
 
-		public function buscarPorNombre($name)
+		public function buscarPorCamposEmailNombre($info)
 		{	
-			if ($name != "" || $name != " ")
+			if ($info != "" || $info != " ")
 			{
-				$this->db->query('SELECT * FROM usuarios WHERE nombre LIKE "%":name"%"');
-				$this->db->bind(':name', $name);
+				$this->db->query('SELECT * FROM usuarios WHERE nombre LIKE "%":info"%" OR email LIKE "%":info"%"');
+				$this->db->bind(':info', $info);
 				$fila = $this->db->regists();
 				return $fila;	
 			}			

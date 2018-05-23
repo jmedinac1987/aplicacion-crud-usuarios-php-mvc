@@ -44,10 +44,10 @@ class Pages extends Controller
 		}		
 	}
 
-	public function buscar($name)
+	public function buscar($info)
 	{
 			//obtener la información del usuario desde el modelo
-			$users = $this->usuarioModelo->buscarPorNombre($name);		
+			$users = $this->usuarioModelo->buscarPorCamposEmailNombre($info);		
 			$data = ['usuarios'=> $users];
 			echo json_encode($data);//se retorna json porque se manejara desde javascript		
 	}

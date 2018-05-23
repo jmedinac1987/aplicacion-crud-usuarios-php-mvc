@@ -10,7 +10,7 @@
 	define('ROUTE_APP', dirname(dirname(__FILE__)));//Se define la ruta padre de la cual se desprenderan las demás, define es reservado de php que permite definir una constante
 
 	//Ruta URL Ejemplo: http://localhost/FrameworkMvc/
-	define('ROUTE_URL', 'http://localhost/CrudMVCFrame');
+	define('ROUTE_URL', 'http://localhost/CRUD-PHP-MVC');
 
 	//Ruta del website
 	define('NAMEWEBSITE', 'CRUD MVC - Jmedinac');

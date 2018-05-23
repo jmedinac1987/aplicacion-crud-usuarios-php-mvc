@@ -1,6 +1,6 @@
 $('#search').on('keyup', function() 
 {	
-	var url = 'http://localhost/CrudMVCFrame';
+	var url = 'http://localhost/CRUD-PHP-MVC';
 	if (this.value != "") 
 	{				 				
 		$.ajax({
@@ -9,7 +9,7 @@ $('#search').on('keyup', function()
 			dataType: 'json',
 			success: function(data){
 				
-				var urlHref = 'http://localhost/CrudMVCFrame';
+				var urlHref = 'http://localhost/CRUD-PHP-MVC';
 				var tablaBusqueda;//tabla html
 				let contador = 0;
 

@@ -4,7 +4,7 @@
 		Insertar
 	</a>
 	<div class="form-group mt-2">		
-		<input class="form-control mr-sm-2" type="search" placeholder="Buscar por nombre..." aria-label="Search" id="search">		
+		<input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search" id="search">		
 	</div>
 	<div id="tablaUsuarios">
 		<table class="table table-hover mt-3" style="text-align: center;">
