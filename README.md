@@ -9,14 +9,14 @@ Jquery, Ajax, javascript y MySQL
 
 1. Si no usa virtualización para la ejecución de la aplicación, debe ajustar el archivo .htacces de la carpeta public de la siguiente forma 
 
-	`<IfModule mod_rewrite.c>
-	  Options -Multiviews
-	  RewriteEngine On
-	  RewriteBase /nombre_del_proyecto/public.
-	  RewriteCond %{REQUEST_FILENAME} !-d
-	  RewriteCond %{REQUEST_FILENAME} !-f
-	  RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
-	</IfModule>` 
+	 * `<IfModule mod_rewrite.c>`
+	 * Options -Multiviews
+	 * RewriteEngine On
+	 * RewriteBase /nombre_del_proyecto/public.
+	 * RewriteCond %{REQUEST_FILENAME} !-d
+	 * RewriteCond %{REQUEST_FILENAME} !-f
+	 * RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+	 * `</IfModule>` 
 
 2. Ajustar los valores de las siguientes constantes de acuerdo a su configración de base de datos y ruta de la aplicación:
 
