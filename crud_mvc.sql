@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `usuarios`
 --
 
-CREATE DATABESE crud_mvc;
+CREATE DATABASE crud_mvc;
 
 CREATE TABLE `usuarios` (
   `id_usuario` int(11) NOT NULL,
