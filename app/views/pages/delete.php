@@ -1,6 +1,6 @@
 <?php  require ROUTE_APP . '/views/inc/header.php' ?>
 	
-	<a href="<?php echo ROUTE_URL; ?>/pages" class="btn btn-ligth"><i class="fa fa-backward">Volver</i></a>
+	<a href="<?php echo ROUTE_URL; ?>" class="btn btn-ligth"><i class="fa fa-backward">Volver</i></a>
 	<h2>Borrar usuario</h2>
 	<div class="card card-body bg-ligth mt-3">								
 		<form action="<?php echo ROUTE_URL; ?>/pages/delete/<?php echo $data['id_usuario'];?>" method="POST">

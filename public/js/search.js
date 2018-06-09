@@ -1,6 +1,6 @@
 $('#search').on('keyup', function() 
 {	
-	var url = 'http://localhost/CRUD-PHP-MVC';
+	let url = 'http://crudusuarios.app';
 	if (this.value != "") 
 	{				 				
 		$.ajax({
@@ -9,14 +9,14 @@ $('#search').on('keyup', function()
 			dataType: 'json',
 			success: function(data){
 				
-				var urlHref = 'http://localhost/CRUD-PHP-MVC';
-				var tablaBusqueda;//tabla html
+				let urlHref = 'http://crudusuarios.app';
+				let tablaBusqueda;//tabla html
 				let contador = 0;
 
 	  			tablaBusqueda = '<table id="tablaUsuarios" class="table table-hover mt-3" style="text-align: center;"><thead class="thead-dark"><tr><th scope="col">#</th><th scope="col">Nombre</th><th scope="col">Email</th><th scope="col">Teléfono</th><th scope="col">Acciones</th></tr></thead><tbody>';
 
 	  			//recorrer json de objetos
-	  			for (var i in data.usuarios) {
+	  			for (let i in data.usuarios) {
 	  				contador++;
 	  				tablaBusqueda+= "<tr>"+"<td>"+contador+"</td>"+"<td>"+data.usuarios[i].nombre+"</td>"+"<td>"+data.usuarios[i].email
 					+"</td>"+"<td>"+data.usuarios[i].telefono+"</td>"+"<td>"+'<div class="btn-group btn-group-toggle" data-toggle="buttons">'+
