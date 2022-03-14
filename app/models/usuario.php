@@ -37,7 +37,7 @@
 		}
 
 		public function addUser($data){
-			$this->db->query('INSERT INTO USUARIOS (NOMBRE, EMAIL, TELEFONO) VALUES (:nombre, :email, :telefono)');
+			$this->db->query('INSERT INTO usuarios (NOMBRE, EMAIL, TELEFONO) VALUES (:nombre, :email, :telefono)');
 
 			//vincular los valores
 			$this->db->bind(':nombre', $data['nombre']);
@@ -54,7 +54,7 @@
 
 		public function updateUser($data){
 			
-			$this->db->query('UPDATE USUARIOS SET NOMBRE = :nombre, EMAIL = :email, TELEFONO = :telefono WHERE id_usuario = :id');
+			$this->db->query('UPDATE usuarios SET NOMBRE = :nombre, EMAIL = :email, TELEFONO = :telefono WHERE id_usuario = :id');
 
 			//vincular los valores
 			$this->db->bind(':id', $data['id_usuario']);
@@ -71,7 +71,7 @@
 		}
 
 		public function deleteUser($data){
-			$this->db->query('DELETE FROM USUARIOS WHERE id_usuario = :id');
+			$this->db->query('DELETE FROM usuarios WHERE id_usuario = :id');
 
 			//vincular los valores
 			$this->db->bind(':id', $data['id_usuario']);

@@ -21,9 +21,9 @@
 				</div>
 				<div class="form-group">
 					<label for="telefono">Telefono: <sup>*</sup></label>
-					<input type="text" name="telefono" class="form-control form-control-lg" required>
+					<input type="text" maxlength="10" pattern="[0-9]{10}" name="telefono" class="form-control form-control-lg" required>
 					<div class="invalid-feedback">
-          				El teléfono del usuario es requerido
+          				El teléfono del usuario es requerido y este debe tener 10 caracteres numéricos
         			</div>
 				</div>
 				<input type="submit" class="btn btn-success" value="Agregar usuario">
